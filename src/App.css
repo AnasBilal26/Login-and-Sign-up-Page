@@ -1,0 +1,784 @@
+/** @format */
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+body {
+  /* height: 100vh;
+  display: flex;
+  justify-content: center; */
+  font-family: 'Bakbak One', sans-serif;
+  overflow: hidden;
+}
+
+.login {
+  z-index: -1;
+  background-color: #222222;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 400px;
+  height: 400px;
+  box-shadow: 1px 1px 30px 9px rgba(255, 255, 255, 0.139);
+  border-radius: 10px;
+  transform: translate(-50%, -50%);
+}
+
+.signup {
+  z-index: -1;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #222222;
+  width: 400px;
+  height: 460px;
+
+  border-radius: 10px;
+  box-shadow: 1px 1px 30px 9px rgba(255, 255, 255, 0.139);
+}
+.forloginheading {
+  display: flex;
+  justify-content: center;
+}
+.forloginheading h1 {
+  font-size: 40px;
+  margin-top: 20px;
+  color: orange;
+}
+.foremailandpassword {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-top: 50px;
+}
+.foremailandpassword input {
+  height: 45px;
+  width: 333px;
+  border: none;
+  border-radius: 5px;
+  padding-left: 20px;
+  outline: none;
+  background-color: #333333;
+  color: white;
+}
+.foremailandpassword input::placeholder {
+  font-size: 17px;
+  font-weight: bold;
+}
+.donthaveaccountandandsignupdiv {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 25px;
+  font-size: 19px;
+  align-items: center;
+}
+.firsp {
+  color: white;
+  cursor: pointer;
+}
+.span {
+  color: orange;
+  cursor: pointer;
+}
+.buttondiv {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.buttonone {
+  height: 45px;
+  width: 333px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: orange;
+  font-size: 25px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+.forui {
+  z-index: -1;
+  position: fixed;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  height: 100vh;
+  width: 100%;
+  color: white;
+  border: 2px solid black;
+}
+
+.uifirsdiv {
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+}
+.first {
+  height: 80px;
+  width: 78px;
+  flex: 1;
+  background-color: #181818;
+  cursor: pointer;
+  transition: all ease 0.9s;
+  animation-name: first;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
+
+.parentdiv {
+  background-color: #181818;
+  z-index: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  overflow: hidden;
+}
+.parentleft {
+  position: relative;
+  border-radius: 10px;
+  background-image: url(./src/anas.png);
+  width: 300px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  transition: all ease 0.6s;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.parentleft:hover {
+  transform: scale(106%);
+  box-shadow: 1px 1px 20px 4px rgba(255, 255, 255, 0.769);
+}
+.mineinfo {
+  background-color: rgba(255, 255, 255, 0.514);
+  position: absolute;
+  transition: all ease 0.5s;
+  height: 280px;
+  width: 90%;
+  border-radius: 10px;
+  bottom: -100%;
+  /* position: absolute; */
+}
+.parentleft:hover .mineinfo {
+  bottom: 0;
+}
+.one {
+  color: orangered;
+  text-align: center;
+  margin-top: 10px;
+  line-height: 1.4;
+}
+.two {
+  color: orangered;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 25px;
+}
+img {
+  border-radius: 10px;
+  height: 350px;
+  cursor: pointer;
+  transition: all ease 0.9s;
+}
+
+.buttontwo {
+  width: 200px;
+  height: 40px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-image: linear-gradient(30deg, orangered, red, darkorange);
+  color: white;
+  border-radius: 20px;
+  font-size: 15px;
+}
+.second {
+  display: none;
+}
+.uisecond {
+  display: none;
+}
+.mobile {
+  display: none;
+}
+@keyframes first {
+  100% {
+    box-shadow: 1px 1px 3px 4px orangered;
+  }
+}
+.first:hover {
+  background-color: red;
+}
+.cardsparent {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  position: fixed;
+}
+.cardfirstparent {
+  display: flex;
+  justify-content: center;
+}
+.forhoneandcolorline {
+  width: 300px;
+  cursor: pointer;
+}
+
+.cardsparent h1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-size: 50px;
+  color: transparent;
+  background-image: linear-gradient(30deg, green, red, blue, orangered, yellow);
+  background-clip: text;
+  -webkit-background-clip: text;
+  margin-left: 12px;
+}
+.colorline {
+  background-image: linear-gradient(black, green);
+  height: 5px;
+}
+.cardstart {
+  height: 470px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  gap: 30px;
+}
+.firstcardsection {
+  display: flex;
+  gap: 30px;
+}
+.samsungs6oarents6 {
+  height: 200px;
+  width: 300px;
+  background-image: url(./src/samsunggalaxy.webp);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  transition: all ease 0.5s;
+}
+.samsungs6oarents6:hover {
+  transform: scale(110%);
+  box-shadow: 1px 1px 20px 8px rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+.iphonethirteen {
+  height: 200px;
+  width: 300px;
+  background-image: url(src/iphonethirteen.jfif);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  transition: all ease 0.5s;
+}
+.iphonethirteen:hover {
+  transform: scale(110%);
+  box-shadow: 1px 1px 20px 8px rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+.samsungsixty {
+  height: 200px;
+  width: 300px;
+  background-image: url(src/samsungssixty.jfif);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  transition: all ease 0.5s;
+}
+.samsungsixty:hover {
+  transform: scale(110%);
+  box-shadow: 1px 1px 20px 8px rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+.motrolla {
+  height: 200px;
+  width: 300px;
+  background-image: url(src/motrolla.jfif);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  transition: all ease 0.5s;
+}
+.motrolla:hover {
+  transform: scale(110%);
+  box-shadow: 1px 1px 20px 8px rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+.iphonrpromax {
+  height: 200px;
+  width: 300px;
+  background-image: url(src/iphonrpromax.jfif);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  transition: all ease 0.5s;
+}
+.iphonrpromax:hover {
+  transform: scale(110%);
+  box-shadow: 1px 1px 20px 8px rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+.htc {
+  height: 200px;
+  width: 300px;
+  background-image: url(src/htc.jfif);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  transition: all ease 0.5s;
+}
+.htc:hover {
+  transform: scale(110%);
+  box-shadow: 1px 1px 20px 8px rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+.Mobileparent {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.samsungleft {
+  height: 400px;
+  width: 400px;
+  background-image: url(./src/samsunggalaxy.webp);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  transition: all ease 0.5s;
+  cursor: pointer;
+}
+.samsungright {
+  width: 300px;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+}
+.Return {
+  width: 200px;
+  height: 40px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-image: linear-gradient(30deg, orangered, red, darkorange);
+  color: white;
+  border-radius: 20px;
+  font-size: 15px;
+}
+.iphonethirteenleft {
+  height: 400px;
+  width: 400px;
+  background-image: url(src/iphonethirteen.jfif);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  transition: all ease 0.5s;
+  cursor: pointer;
+}
+.samsungsixleft {
+  height: 400px;
+  width: 400px;
+  background-image: url(src/samsungssixty.jfif);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  transition: all ease 0.5s;
+  cursor: pointer;
+}
+.promax {
+  height: 400px;
+  width: 400px;
+  background-image: url(src/iphonrpromax.jfif);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  transition: all ease 0.5s;
+  cursor: pointer;
+}
+.Motrolla {
+  height: 400px;
+  width: 400px;
+  background-image: url(src/motrolla.jfif);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  transition: all ease 0.5s;
+  cursor: pointer;
+}
+.htcone {
+  height: 400px;
+  width: 400px;
+  background-image: url(src/htc.jfif);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  transition: all ease 0.5s;
+  cursor: pointer;
+}
+.forreturnone {
+  display: flex;
+  justify-content: center;
+}
+.returnone {
+  margin-top: 10px;
+  width: 150px;
+  height: 30px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-image: linear-gradient(30deg, orangered, red, darkorange);
+  color: white;
+  border-radius: 20px;
+  font-size: 15px;
+}
+@media only screen and (max-width: 600px) {
+  .htcone {
+    height: 200px;
+  }
+  .Motrolla {
+    height: 200px;
+  }
+  .iphonethirteenleft {
+    height: 200px;
+  }
+
+  .login {
+    width: 359px;
+  }
+  .signup {
+    width: 359px;
+    display: block;
+  }
+  .uisecond {
+    display: block;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  .parentdiv {
+    /* border: 2px solid white; */
+  }
+  .second {
+    display: block;
+    height: 60px;
+    width: 63px;
+    background-color: #181818;
+    transition: all ease 0.5s;
+    animation-name: first;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    cursor: pointer;
+  }
+  .second:hover {
+    background-color: red;
+  }
+  .first {
+    display: none;
+    height: 60px;
+    width: 60px;
+    background-color: #181818;
+    transition: all ease 0.5s;
+    animation-name: first;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+  }
+  .blocknone {
+    display: none;
+  }
+  .forui {
+    z-index: -1;
+    position: fixed;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    height: 100vh;
+    width: 100%;
+    color: white;
+    display: none;
+  }
+  .mobile {
+    z-index: -1;
+    position: fixed;
+    background-color: black;
+    display: flex;
+    /* flex-direction: column; */
+
+    height: 100vh;
+    width: 100%;
+    color: white;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  /* card
+  card */
+  .cardsparent {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+  }
+  .cardfirstparent {
+    display: flex;
+    justify-content: center;
+  }
+  .forhoneandcolorline {
+    width: 300px;
+    cursor: pointer;
+  }
+
+  .cardsparent h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 50px;
+    color: transparent;
+    background-image: linear-gradient(
+      30deg,
+      green,
+      red,
+      blue,
+      orangered,
+      yellow
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-align: center;
+  }
+  .colorline {
+    background-image: linear-gradient(black, green);
+    height: 5px;
+  }
+  .cardstart {
+    height: 470px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 40px;
+    gap: 14px;
+    flex-direction: row;
+
+    justify-content: center;
+  }
+  .firstcardsection {
+    display: flex;
+    gap: 70px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .samsungs6oarents6 {
+    height: 100px;
+    width: 160px;
+    background-image: url(./src/samsunggalaxy.webp);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    transition: all ease 0.5s;
+  }
+  .samsungs6oarents6:hover {
+    transform: scale(110%);
+    box-shadow: 1px 1px 20px 8px rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+  }
+  .iphonethirteen {
+    height: 100px;
+    width: 160px;
+    background-image: url(src/iphonethirteen.jfif);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    transition: all ease 0.5s;
+  }
+  .iphonethirteen:hover {
+    transform: scale(110%);
+    box-shadow: 1px 1px 20px 8px rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+  }
+  .samsungsixty {
+    height: 100px;
+    width: 160px;
+    background-image: url(src/samsungssixty.jfif);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    transition: all ease 0.5s;
+  }
+  .samsungsixty:hover {
+    transform: scale(110%);
+    box-shadow: 1px 1px 20px 8px rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+  }
+  .motrolla {
+    height: 100px;
+    width: 160px;
+    background-image: url(src/motrolla.jfif);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    transition: all ease 0.5s;
+  }
+  .motrolla:hover {
+    transform: scale(110%);
+    box-shadow: 1px 1px 20px 8px rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+  }
+  .iphonrpromax {
+    height: 100px;
+    width: 160px;
+    background-image: url(src/iphonrpromax.jfif);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    transition: all ease 0.5s;
+  }
+  .iphonrpromax:hover {
+    transform: scale(110%);
+    box-shadow: 1px 1px 20px 8px rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+  }
+  .htc {
+    height: 100px;
+    width: 160px;
+    background-image: url(src/htc.jfif);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    transition: all ease 0.5s;
+  }
+  .htc:hover {
+    transform: scale(110%);
+    box-shadow: 1px 1px 20px 8px rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+  }
+  .Mobileparent {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+  }
+
+  .samsungleft {
+    height: 200px;
+    width: 400px;
+    background-image: url(./src/samsunggalaxy.webp);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    transition: all ease 0.5s;
+    cursor: pointer;
+  }
+  .samsungsixleft {
+    height: 200px;
+    width: 400px;
+    background-image: url(src/samsungssixty.jfif);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    transition: all ease 0.5s;
+    cursor: pointer;
+  }
+  .promax {
+    height: 200px;
+    width: 400px;
+    background-image: url(src/iphonrpromax.jfif);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    transition: all ease 0.5s;
+    cursor: pointer;
+  }
+
+  .samsungright {
+    text-align: center;
+    width: 200px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .Return {
+    width: 300px;
+    height: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-image: linear-gradient(30deg, orangered, red, darkorange);
+    color: white;
+    border-radius: 20px;
+    font-size: 15px;
+  }
+  .cardsparent {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .cardsparent h1 {
+    text-align: center;
+    font-size: 30px;
+    margin-left: 0px;
+  }
+  .returnone {
+    margin-top: 10px;
+    width: 100px;
+    height: 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-image: linear-gradient(30deg, orangered, red, darkorange);
+    color: white;
+    border-radius: 20px;
+    font-size: 10px;
+  }
+}
