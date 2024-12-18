@@ -494,8 +494,8 @@ img {
   }
   .second {
     display: block;
-    height: 60px;
-    width: 63px;
+    height: 10vh;
+    width: 30vw;
     background-color: #181818;
     transition: all ease 0.5s;
     animation-name: first;
