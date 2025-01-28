@@ -107,7 +107,6 @@ const Ui = () => {
           <div className="first"></div> <div className="first"></div>
         </div>
         {/* anas */}
-
         <div className="uifirsdiv">
           <div className="first"></div>
           <div className="first"></div> <div className="first"></div>{' '}
@@ -229,7 +228,105 @@ const Ui = () => {
           <div className="first"></div> <div className="first"></div>{' '}
           <div className="first"></div> <div className="first"></div>
         </div>
-
+        <div className="uifirsdiv">
+          <div className="first"></div>
+          <div className="first"></div> <div className="first"></div>{' '}
+          <div className="first"></div> <div className="first"></div>{' '}
+          <div className="first"></div> <div className="first"></div>{' '}
+          <div className="first"></div> <div className="first"></div>{' '}
+          <div className="first"></div> <div className="first"></div>{' '}
+          <div className="first"></div>
+          <div className="first"></div> <div className="first"></div>{' '}
+          <div className="first"></div> <div className="first"></div>
+        </div>
+        <div className="uifirsdiv">
+          <div className="first"></div>
+          <div className="first"></div> <div className="first"></div>{' '}
+          <div className="first"></div> <div className="first"></div>{' '}
+          <div className="first"></div> <div className="first"></div>{' '}
+          <div className="first"></div> <div className="first"></div>{' '}
+          <div className="first"></div> <div className="first"></div>{' '}
+          <div className="first"></div>
+          <div className="first"></div> <div className="first"></div>{' '}
+          <div className="first"></div> <div className="first"></div>
+        </div>
+        <div className="uifirsdiv">
+          <div className="first"></div>
+          <div className="first"></div> <div className="first"></div>{' '}
+          <div className="first"></div> <div className="first"></div>{' '}
+          <div className="first"></div> <div className="first"></div>{' '}
+          <div className="first"></div> <div className="first"></div>{' '}
+          <div className="first"></div> <div className="first"></div>{' '}
+          <div className="first"></div>
+          <div className="first"></div> <div className="first"></div>{' '}
+          <div className="first"></div> <div className="first"></div>
+        </div>{' '}
+        <div className="uifirsdiv">
+          <div className="first"></div>
+          <div className="first"></div> <div className="first"></div>{' '}
+          <div className="first"></div> <div className="first"></div>{' '}
+          <div className="first"></div> <div className="first"></div>{' '}
+          <div className="first"></div> <div className="first"></div>{' '}
+          <div className="first"></div> <div className="first"></div>{' '}
+          <div className="first"></div>
+          <div className="first"></div> <div className="first"></div>{' '}
+          <div className="first"></div> <div className="first"></div>
+        </div>{' '}
+        <div className="uifirsdiv">
+          <div className="first"></div>
+          <div className="first"></div> <div className="first"></div>{' '}
+          <div className="first"></div> <div className="first"></div>{' '}
+          <div className="first"></div> <div className="first"></div>{' '}
+          <div className="first"></div> <div className="first"></div>{' '}
+          <div className="first"></div> <div className="first"></div>{' '}
+          <div className="first"></div>
+          <div className="first"></div> <div className="first"></div>{' '}
+          <div className="first"></div> <div className="first"></div>
+        </div>{' '}
+        <div className="uifirsdiv">
+          <div className="first"></div>
+          <div className="first"></div> <div className="first"></div>{' '}
+          <div className="first"></div> <div className="first"></div>{' '}
+          <div className="first"></div> <div className="first"></div>{' '}
+          <div className="first"></div> <div className="first"></div>{' '}
+          <div className="first"></div> <div className="first"></div>{' '}
+          <div className="first"></div>
+          <div className="first"></div> <div className="first"></div>{' '}
+          <div className="first"></div> <div className="first"></div>
+        </div>{' '}
+        <div className="uifirsdiv">
+          <div className="first"></div>
+          <div className="first"></div> <div className="first"></div>{' '}
+          <div className="first"></div> <div className="first"></div>{' '}
+          <div className="first"></div> <div className="first"></div>{' '}
+          <div className="first"></div> <div className="first"></div>{' '}
+          <div className="first"></div> <div className="first"></div>{' '}
+          <div className="first"></div>
+          <div className="first"></div> <div className="first"></div>{' '}
+          <div className="first"></div> <div className="first"></div>
+        </div>{' '}
+        <div className="uifirsdiv">
+          <div className="first"></div>
+          <div className="first"></div> <div className="first"></div>{' '}
+          <div className="first"></div> <div className="first"></div>{' '}
+          <div className="first"></div> <div className="first"></div>{' '}
+          <div className="first"></div> <div className="first"></div>{' '}
+          <div className="first"></div> <div className="first"></div>{' '}
+          <div className="first"></div>
+          <div className="first"></div> <div className="first"></div>{' '}
+          <div className="first"></div> <div className="first"></div>
+        </div>
+        <div className="uifirsdiv">
+          <div className="first"></div>
+          <div className="first"></div> <div className="first"></div>{' '}
+          <div className="first"></div> <div className="first"></div>{' '}
+          <div className="first"></div> <div className="first"></div>{' '}
+          <div className="first"></div> <div className="first"></div>{' '}
+          <div className="first"></div> <div className="first"></div>{' '}
+          <div className="first"></div>
+          <div className="first"></div> <div className="first"></div>{' '}
+          <div className="first"></div> <div className="first"></div>
+        </div>
         <div className="uifirsdiv">
           <div className="first"></div>
           <div className="first"></div> <div className="first"></div>{' '}
@@ -254,6 +351,76 @@ const Ui = () => {
         </div>
       </div>
       <div className="mobile">
+        <div className="uisecond">
+          <div className="second"></div>
+          <div className="second"></div>
+          <div className="second"></div>
+          <div className="second"></div>
+          <div className="second"></div>
+        </div>
+        <div className="uisecond">
+          <div className="second"></div>
+          <div className="second"></div>
+          <div className="second"></div>
+          <div className="second"></div>
+          <div className="second"></div>
+        </div>
+        <div className="uisecond">
+          <div className="second"></div>
+          <div className="second"></div>
+          <div className="second"></div>
+          <div className="second"></div>
+          <div className="second"></div>
+        </div>
+        <div className="uisecond">
+          <div className="second"></div>
+          <div className="second"></div>
+          <div className="second"></div>
+          <div className="second"></div>
+          <div className="second"></div>
+        </div>
+        <div className="uisecond">
+          <div className="second"></div>
+          <div className="second"></div>
+          <div className="second"></div>
+          <div className="second"></div>
+          <div className="second"></div>
+        </div>
+        <div className="uisecond">
+          <div className="second"></div>
+          <div className="second"></div>
+          <div className="second"></div>
+          <div className="second"></div>
+          <div className="second"></div>
+        </div>
+        <div className="uisecond">
+          <div className="second"></div>
+          <div className="second"></div>
+          <div className="second"></div>
+          <div className="second"></div>
+          <div className="second"></div>
+        </div>
+        <div className="uisecond">
+          <div className="second"></div>
+          <div className="second"></div>
+          <div className="second"></div>
+          <div className="second"></div>
+          <div className="second"></div>
+        </div>
+        <div className="uisecond">
+          <div className="second"></div>
+          <div className="second"></div>
+          <div className="second"></div>
+          <div className="second"></div>
+          <div className="second"></div>
+        </div>
+        <div className="uisecond">
+          <div className="second"></div>
+          <div className="second"></div>
+          <div className="second"></div>
+          <div className="second"></div>
+          <div className="second"></div>
+        </div>
         <div className="uisecond">
           <div className="second"></div>
           <div className="second"></div>
